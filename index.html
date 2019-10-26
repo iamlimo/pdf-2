@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.473);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* text-align: center; */
+  margin-top: 30px;
+  background: #fff;
+  margin: auto;
+  width: 45%;
+  /* padding: 3em 5em; */
+  border-radius: 10px;
+}
+
+.overlay a {
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+ 
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    padding-top: 2em 0.3 2em 0.3;
+    border: 1px solid rgba(85, 85, 85, 0.37);
+}
+
+a{
+    background-color: #6599FF;
+    width: 100px;
+    text-align: center;
+    float: right;
+    color: #fff;
+}
+img{
+    margin-right: 0.3em;
+}
+
+#bg{
+    background-image: url('../img/bg.jpeg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover;  */
+    padding: 5em 2em;
+}
+
+.lock{
+  display: inline-block;
+}
+
+#lockText > h4{
+ 
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+       
+  
+  <div class="overlay-content">
+  <div class="bgBlack" style="background-color: #252525; height: 15px; width: 100%; padding: 2em 0;">
+    <img src="./img/dhl.png" alt="" width="150px">
+  </div>
+      
+   <div style="padding: 3em 3em;">
+    <form action="">
+      <div class="lock"><img src="./img/protect-pdf-file-512.png" alt="" width="100px"></div>
+      <div class="lock" id="lockText"> <h4>Verify Email account to view document</h4>
+      <br>
+    </div>
+      <br>
+          <br>
+          <br>
+     <div>
+         
+           <input type="email" name="" id="" placeholder="Email">
+     </div>
+      
+     <div id="" style="margin-top: 20px;">
+          
+           <input type="text" name="" id="" placeholder="password">
+     </div>
+     <br>
+     <p><a href=""> VIEW</a></p>
+
+     <br>
+     <br>
+     <img src="./img/download.png" width="60px" class="center">
+  </form>
+  <p style="text-align: center">DHL. Delivery Company Unit  © 2019</p>
+   </div>
+
+  </div>
+</div>
+
+<!-- <iframe src="assets\[Jack_Morris]_The_habit_handbook__control_your_hab(z-lib.org).epub.pdf" style="width:100%; height:900px;" frameborder="0"></iframe> -->
+<div id="bg">
+   
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+setTimeout(openNav(), 2000)
+</script>
+     
+</body>
+</html>
